@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>Autotune your pump</title>
+
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+    <h1>Autotune your Insulin Pump</h1>
+	<p>This project was started at the Nightscout Foundation NFHack2017.1 Hackathon to provide people who are <b>NOT</b> running OpenAPS -
+	or even Nightscout - with the opportunity to tune pump setttings based on recommendations from the AutoTune oref0 algorithm.</p>
+    <h2>Some info we need</h2>
+	<div id="form">
+		<form action="https://some-aws-hosted-lambda-funcction/data/post" method="post">
+		Insulin Duration - in Hours:<br />
+		<input type="text" name="Duration" /><br />
+		Insulin Sensitivity Factor (ISF) - in mg/dL/Unit<br />
+		<input type="text" name="ISF" /><br />
+		Carb Ratio (g of CHO per Unit):<br />
+		<input type="text" name="CarbRatio" /><br />
+		Base Basal Rate (Units/Hr)<br />
+		<input type="text" name="Duration" /><br />
+		<br />
+		<input type="submit" value="Submit">
+		</form>
+	</div>
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.min.js"></script>
+  </body>
+</html>
